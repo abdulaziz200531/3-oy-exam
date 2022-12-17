@@ -1,0 +1,384 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style-type: none;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  overflow-x: hidden;
+}
+
+
+header {
+  background-color: #fff;
+  width: 100%;
+  height: 100px;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+
+.active .bar-icon-open {
+  display: none;
+}
+
+.active .bar-icon-close {
+  display: block;
+}
+
+.active .bar-item {
+  margin-left: 0 !important;
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
+}
+
+.bar {
+  display: none;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.bar-header {
+  padding-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.bar-header .bar-logo {
+  width: 65%;
+  text-align: left;
+}
+
+.bar-item {
+  margin-top: 12px;
+  width: 100%;
+  margin-left: -4000px;
+}
+
+.bar-item ul {
+  background-color: #fff;
+  height: 100vh;
+  padding-top: 70px;
+  padding-left: 20px;
+}
+
+.bar-item ul li {
+  list-style: none;
+  margin: 30px 20px;
+}
+
+.bar-item ul li:last-child {
+  margin: 0;
+  padding-top: 220px;
+}
+
+.bar-item ul li:last-child .btn {
+  width: auto;
+}
+
+.bar-item ul li a {
+  color: black;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.bar-icon {
+  width: 45%;
+  padding-left: 20px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.bar-icon-open {
+  display: block;
+}
+
+.bar-icon-stick {
+  background-color: #000;
+  width: 25px;
+  height: 4px;
+  margin: 4px 0;
+}
+
+.bar-icon-close {
+  display: none;
+  padding-top: 10px;
+}
+
+.bar-icon-close .bar-icon-stick:first-child {
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.bar-icon-close .bar-icon-stick:last-child {
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  margin-top: -8px;
+}
+
+.menu-wrapper {
+  height: 100%;
+}
+
+.menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  align-items: center;
+}
+
+.menu .btn {
+  text-align: right;
+}
+
+.menu-logo {
+  width: 20%;
+  /* height: 100%; */
+}
+
+.menu-logo svg {
+  position: absolute;
+  top: 34px;
+}
+
+.menu-item {
+  width: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  /* height: 100%; */
+}
+
+
+.menu-item a {
+  text-decoration: none;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 65px;
+  color: #263238;
+}
+
+.hero_title {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 64px;
+  line-height: 80px;
+  width: 386px;
+  height: 240px;
+  color: #000000;
+}
+
+.hero_text {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 36px;
+  color: #8F95A5;
+
+}
+
+
+.hero_btn {
+  font-style: normal !important;
+  font-weight: 400 !important;
+  font-size: 36px !important;
+  line-height: 54px !important;
+  color: #FFFFFF !important;
+}
+
+.skill_title {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 80px;
+  color: #000000;
+}
+
+.skill_card_text {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+
+  color: #8F95A5;
+
+}
+
+.skill_card {
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+.listening {
+  width: 885px !important;
+  height: 343px;
+}
+
+.speaking {
+  width: 435px;
+  height: 894px;
+}
+
+
+.speaking img {
+  margin-top: 60px;
+}
+
+.speaking button {
+  margin-top: 36px;
+}
+
+.reading,
+.writing {
+  width: 434px;
+  height: 531px;
+}
+
+.about {
+  margin-top: 70px;
+}
+
+.about_title {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 80px;
+  color: #000000;
+}
+
+.about_text {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+
+  color: #8F95A5;
+}
+
+.about_wrapper_card_title {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 80px;
+  color: #2A3246;
+}
+
+.about_wrapper_card_text {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  color: #8F95A5;
+
+}
+
+.custom_skills {
+  display: flex;
+  /* gap: 5px; */
+}
+
+.card_image {
+  height: 350px;
+}
+
+.pricing_card_text {
+  height: 90px;
+}
+
+.contact_image {
+  padding: 75px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact_form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pricing_title,
+.contact h2 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 80px;
+  margin-top: 70px;
+  color: #000000;
+}
+
+
+@media only screen and (max-width:992px) {
+  .listening {
+    width: auto !important;
+    height: 241px;
+  }
+
+  .reading,
+  .writing {
+    width: 302px;
+    height: 441px;
+  }
+
+  .speaking {
+    width: 303px;
+    height: 696px;
+  }
+
+  .skill_card img {
+    width: 150px !important;
+  }
+}
+
+
+@media screen and (min-width: 250px) and (max-width: 767px) {
+  main {
+    overflow: auto;
+  }
+
+  header {
+    z-index: 1;
+    height: 64px;
+  }
+
+  header .bar {
+    display: block;
+  }
+
+  header .menu {
+    display: none;
+  }
+
+  .bar {
+    display: block;
+  }
+  .imgs{
+    width: 299px;
+height: 299px;
+  }
+
+  .listening{
+    display: flex;
+    flex-direction: column-reverse;
+    width: 434px;
+  height: 531px;
+    
+  }
+
+
+}
